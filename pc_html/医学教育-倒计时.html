@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>医学教育-倒计时</title>
+<link rel="stylesheet" type="text/css" href="res/index.css" />
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+
+<body>
+<div class="header">
+	<div class="header_body"></div>
+</div>
+<div class="nav">
+	<div class="nav_body">
+    	<div class="left_nav">
+        	<a href="" class="nav1"></a>
+            <a href="" class="nav2">领域热点</a>
+            <a href="" class="nav3">期刊文章</a>
+            <a href="" class="nav4 nav_current nav4_c">医学教育</a>
+            <ul class="down_nav down_nav3" style="display:none">
+                <li class="one_area current_area">
+                    <a class="no_bg" href="">精神分裂症</a>
+                </li>
+                <li class="one_area">
+                    <a href="">抑郁症</a>
+                </li>
+                <li class="one_area">
+                    <a href="">神经系统疾病</a>
+                </li>
+            </ul>
+            <a href="" class="nav5">我的定制</a>
+            <a href="" class="nav6">联系我们</a>
+        </div>
+        <div class="right_search">
+        	<input type="text" class="input1" />
+            <input type="button" class="btn top_search" />
+        </div>
+    </div>
+</div>
+<div class="count_box">
+    <div class="top_path">
+        <a href="">医学教育</a> > <a href="">精神分裂</a> > <a href="">会议直播</a> > 正文
+    </div>
+    <div class="count_body">
+        <div class="time_box">
+            <div class="day">10</div>
+            <div class="hour">23</div>
+            <div class="minute">45</div>
+            <div class="second">06</div>
+        </div>
+        <!--<div class="meet_intro">
+        	<p>主<span></span>席：刘学源  教授</p>
+            <p>会议时间：2016-7-31 08:30-16:30</p>
+        </div>-->
+        <div class="btn_box">
+        	<input type="button" class="btn btn1" value="会议日程" />
+            <input type="button" class="btn btn2" value="上午直播" />
+            <input type="button" class="btn btn2" value="下午直播" id="btn" />
+            <ul id="meet">
+            	<li>
+                	<a href="" class="a1">专科分会</a>
+                </li>
+                <li>
+                	<a href="" class="a2">综合分会</a>
+                </li>
+            </ul>
+            <script>
+				$("#btn,#meet").hover(function(){
+					$("#meet").toggle();
+				});
+            </script>
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="footer_body">法律声明：本网站全部内容由西安杨森制药有限公司所拥有或控制，并在世界范围内受版权法保护。</div>
+</div>
+<div class="shadow" style="display:block;"></div>
+<div class="meet_tb" style="display:block;">
+	<div class="tb_box">
+    	<img src="res/images/1.jpg" />
+        <img src="res/images/2.jpg" />
+        <img src="res/images/3.jpg" />
+    </div>
+    <input type="button" class="btn" />
+</div>
+</body>
+</html>

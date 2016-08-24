@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="res/css/mobile.css" />
+<title>医学教育-倒计时</title>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(function(){
+			$("ul.nav_list li:eq(2)").click(function(){
+					$("ul li.drop ul").toggle();
+				});
+		});
+</script>
+</head>
+<body onload="init()" onresize="init()">
+    <div class="header">
+    	<div class="header_body">
+            <span><a href="">登录</a></span>
+            <span><a href="">注册</a></span>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_body">
+        	<ul class="nav_list clearfix">
+            	<li class="home">
+                	<a href="">
+                    	<img src="res/images/home.png">
+                    </a>
+                </li>
+            	<li class="box">
+                	<a href="">领域热点</a>
+                </li>
+                <li class="box drop">
+                	<a class="cur">医学教育</a>
+                    <ul>
+                    	<li>
+                        	<a href="" class="sele">精神分裂症</a>
+                        </li>
+                        <li>
+                        	<a href="">抑郁症</a>
+                        </li>
+                        <li>
+                        	<a href="">神经系统疾病</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                	<a href="">我的定制</a>
+                </li>
+                <li>
+                	<a href="">联系我们</a>
+                </li>
+            </ul>
+            <div class="search_box">
+        		<input type="text" class="txt" placeholder="搜索"/>
+                <input type="button" class="btn" />
+        	</div>
+        </div>
+    </div>
+    <div class="container" id="bg">
+    	<div class="con_body">
+            <div class="con_list">
+                <div class="menu">	
+                    <span class="box"><a href="">案例学习</a></span>
+                    <span class="box"><a href="">讲座</a></span>
+                    <span class="box"><a href="" class="cur">会议直播</a></span>
+                    <span><a href="">课件学习与收获</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="count_body">
+        	<div class="time_box">
+                <div class="count_bg">
+                    <img src="res/images/count_bg.jpg" />
+                </div>
+                <div class="time_bg">
+                    <div class="time_body">
+                        <div class="day">10</div>
+                        <div class="hour">23</div>
+                        <div class="minute">45</div>
+                        <div class="second">06</div>
+                    </div>
+                </div>
+            </div>
+			<!--<div class="meet_info">
+                <h4><img src="res/images/meet_tit.png" /></h4>
+                <p>主席：吴逊</p>
+            	<p>2016年3月12日  08:30-17:30</p>
+            </div>-->
+            <div class="btn_box">
+                <div class="l_btn"><input type="button" class="btn btn1" value="会议日程" /></div>
+                <div class="c_btn"><input type="button" class="btn btn2" value="上午直播" /></div>
+                <div class="r_btn">
+                	<input type="button" class="btn btn2" value="下午直播" id="btn" />
+                    <ul id="meet">
+                        <li>
+                            <a href="" class="a1">专科分会</a>
+                        </li>
+                        <li>
+                            <a href="" class="a2">综合分会</a>
+                        </li>
+                    </ul>
+                    <script>
+						$("#btn,#meet").click(function(){
+							$("#meet").toggle();
+						});
+					</script>
+				</div>  
+            </div>
+		</div>
+    </div>
+    <div class="footer">
+    	<div class="footer_body">
+        	<p>法律声明：</p>
+            <p class="state">本网站全部内容由西安杨森制药有限公司所拥有或控制，并在世界范围内受版权法保护。</p>
+        </div>
+    </div>
+    <div class="cover_box" style="display:block;"></div>
+    <div class="meet_tb" style="display:block;">
+        <img src="res/images/1.jpg" />
+        <img src="res/images/2.jpg" />
+        <img src="res/images/3.jpg" />
+    	<input type="button" class="btn" />
+	</div>
+    <script>
+		function init(){
+			var winW=document.documentElement.clientWidth;//屏幕宽度
+			var winH=document.documentElement.clientHeight; //屏幕高度
+			var allH=document.documentElement.scrollHeight;//body内容高度
+			var bg=document.getElementById("bg");
+			
+			var h=winW*(0.23*640/640)+177;
+			var conH1=winH-h;
+			var conH2=allH-h;
+			if(allH<winH){
+				bg.style.height=conH1+"px";			
+			}else{
+				bg.style.height=conH2+"px";	
+			}
+		}
+    </script>
+</body>
+</html>

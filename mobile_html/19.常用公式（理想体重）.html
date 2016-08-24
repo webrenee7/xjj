@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="res/css/mobile.css" />
+<title>常用公式-理想体重</title>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(function(){
+			$("ul.nav_list li:eq(2)").click(function(){
+					$("ul li.drop ul").toggle();
+				});
+		});
+</script>
+</head>
+<body>
+    <div class="header">
+    	<div class="header_body">
+            <span><a href="">登录</a></span>
+            <span><a href="">注册</a></span>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_body">
+        	<ul class="nav_list clearfix">
+            	<li class="home">
+                	<a href="" class="cur">
+                    	<img src="res/images/home.png">
+                    </a>
+                </li>
+            	<li class="box">
+                	<a href="">领域热点</a>
+                </li>
+                <li class="box drop">
+                	<a>医学教育</a>
+                    <ul>
+                    	<li>
+                        	<a href="" class="sele">精神分裂症</a>
+                        </li>
+                        <li>
+                        	<a href="">抑郁症</a>
+                        </li>
+                        <li>
+                        	<a href="">神经系统疾病</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                	<a href="">我的定制</a>
+                </li>
+                <li>
+                	<a href="">联系我们</a>
+                </li>
+            </ul>
+            <div class="search_box">
+        		<input type="text" class="txt" placeholder="搜索"/>
+                <input type="button" class="btn" />
+        	</div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="con_body ideal_weight">
+            <div class="formula_tit clearfix">	
+                <span class="left">理想体重</span>
+                <select size="1" class="right">
+                    <option>S1</option>
+                </select>
+            </div>
+            <div class="case_info">
+                <div class="white_bg">
+                    <div class="case_one">
+                        <label class="metric">女性</label>
+                        <input type="checkbox" /><span>是</span>
+                    </div>
+                    <div class="case_one">
+                        <label class="metric">身高</label>
+                        <input type="text" />
+                        <label class="unit">厘米</label>
+                    </div>
+                    <div class="case_one">
+                        <label class="metric">需要的潮气量</label>
+                        <input type="text" />
+                        <label class="unit">毫克/千克</label>
+                    </div>
+                </div>
+                <div class="gray_bg">
+                    <div class="case_one">
+                        <label class="metric">理想体重:</label>
+                        <input type="text" value="点击查看"/>
+                        <label class="unit">千克</label>
+                    </div>
+                    <div class="case_one pb_0">
+                        <label class="metric">潮气量:</label>
+                        <input type="text" value="点击查看"/>
+                        <label class="unit">毫克</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="footer_body">
+        	<p>法律声明：</p>
+            <p class="state">本网站全部内容由西安杨森制药有限公司所拥有或控制，并在世界范围内受版权法保护。</p>
+        </div>
+    </div>
+</body>
+</html>

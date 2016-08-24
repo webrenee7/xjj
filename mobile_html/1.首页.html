@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="res/css/mobile.css" />
+<title>首页</title>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script>
+	$(function(){
+			$("ul.nav_list li:eq(2)").click(function(){
+					$("ul li.drop ul").toggle();
+				});
+		});
+	
+</script>
+<script>
+window.onscroll=function ()
+	{
+		var oDiv=document.getElementById('fly_box_ecnp');
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		
+		//oDiv.style.top=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2+'px';
+		var t=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2;
+		startMove(parseInt(t));
+	}
+	
+	var timer=null;
+	
+	function startMove(iTarget)
+	{
+		var oDiv=document.getElementById('fly_box_ecnp');
+		
+		clearInterval(timer);
+		timer=setInterval(function (){
+			var iSpeed=(iTarget-oDiv.offsetTop)/8;
+			iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+			
+			if(oDiv.offsetTop==iTarget)
+			{
+				clearInterval(timer);
+			}
+			else
+			{
+				oDiv.style.top=oDiv.offsetTop+iSpeed+'px';
+			}
+			
+	//		txt1.value=oDiv.offsetTop+',目标：'+iTarget;
+		}, 30);
+	}
+</script>
+</head>
+<div class="fly_box" id="fly_box_ecnp">
+        <a href="" class="fly_box_body"><img src="res/images/fly_box.png" /></a>
+        <input type="button" class="btn close_btn" />
+	</div>
+<body>
+    <div class="header">
+    	<div class="header_body">
+            <span><a href="">登录</a></span>
+            <span><a href="">注册</a></span>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_body">
+        	<ul class="nav_list clearfix">
+            	<li class="home">
+                	<a href="" class="cur">
+                    	<img src="res/images/home.png">
+                    </a>
+                </li>
+            	<li class="box">
+                	<a href="">领域热点</a>
+                </li>
+                <li class="box drop">
+                	<a>医学教育</a>
+                    <ul>
+                    	<li>
+                        	<a href="" class="sele">精神分裂症</a>
+                        </li>
+                        <li>
+                        	<a href="">抑郁症</a>
+                        </li>
+                        <li>
+                        	<a href="">神经系统疾病</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                	<a href="">我的定制</a>
+                </li>
+                <li>
+                	<a href="">联系我们</a>
+                </li>
+            </ul>
+            <div class="search_box">
+        		<input type="text" class="txt" placeholder="搜索"/>
+                <input type="button" class="btn" />
+        	</div>
+        </div>
+    </div>
+    <div class="container">
+    	<div class="con_body">
+        	<div class="con_one">
+            	<div class="top">	
+                	<div class="con_l">
+                    	<img src="res/images/tit01.jpg" class="tit"/>
+                        <img src="res/test_images/img01.jpg" />
+                    </div>
+                    <div class="con_r">
+                    	<a href="">
+                            <h3><span>现行精神药物命名系统或被颠覆</span><span class="new"></span></h3>
+                            <p>世界主要精神病学组织正在提议。颠覆目前的药物命名系统，由基于症状（如抗抑郁药、抗精神病药）转变为基于于症状...<span>[详情]</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="btm">
+                	<ul>
+                    	<li>
+                        	<a href="">专家视点：难治性强迫的治疗策略</a><span class="new"></span>
+                        </li>
+                        <li>
+                        	<a href="">AJP 综观：糖皮质激素的精神副作用</a>
+                            <span></span>
+                        </li>
+                        <li>
+                        	<a href="">专家视点：难治性强迫的治疗策略</a>
+                        </li>
+                        <li>
+                        	<a href="">专家视点：难治性强迫的治疗策略</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+     		<div class="con_one">
+            	<div class="top">	
+                	<div class="con_l">
+                    	<img src="res/images/tit02.jpg" class="tit"/>
+                        <img src="res/test_images/img02.jpg" />
+                    </div>
+                    <div class="con_r">
+                    	<a href="">
+                            <h3>Expert Talks</h3>
+                            <p>this section contains recordings of educational seicntirie talks and presentations presentations by leading  ......<span>[more]</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="btm">
+                	<ul>
+                    	<li>
+                        	<a href="">this section contains recordings</a>
+                        </li>
+                        <li>
+                        	<a href="">talks and presentations by leading experts</a>
+                        </li>
+                        <li>
+                        	<a href="">this section contains recordings of e</a>
+                        </li>
+                        <li>
+                        	<a href="">and presentations by leading experts is</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="medical_tool">
+            	<div>
+                	<img src="res/images/tit03.jpg" class="tit" />
+                </div>
+                <div class="tool_list">
+                	<div>
+                    	<a href="">
+                            <p class="img_box">
+                                <img src="res/images/tool01.jpg"/>
+                            </p>
+                            <p>文献检索</p>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                            <p class="img_box">
+                                <img src="res/images/tool02.jpg" />
+                            </p>
+                            <p>全文获取</p>
+                        </a>
+                    </div>
+                    <div>
+                    	<a href="">
+                            <p class="img_box">
+                                <img src="res/images/tool03.jpg" />
+                            </p>
+                            <p>常用工具</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_list">
+            	<h3>点击排行榜</h3>
+                <div>
+                	<div class="menu">	
+                    	<span class="mar_r7"><a href="" class="cur">领域热点</a></span>
+                        <span><a href="">医学教育</a></span>
+                    </div>
+                    <ul>
+                    	<li class="cur">
+                        	<span>1</span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="cur">
+                        	<span>2</span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="cur">
+                        	<span>3</span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li>
+                        	<span></span>
+                        	<a href="">糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link">
+            	<h3>友情链接</h3>
+                <div>
+                	<a href="">CSP网络精神病学组</a>
+                    <a href="">天坛卒中学院</a>
+                    <a href="">杨森亚太精分学院</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="footer_body">
+        	<p>法律声明：</p>
+            <p class="state">会议内容不可散播或使用。</p>
+        </div>
+    </div>
+    <div class="cover_box" style="display:block;"></div>
+    <div class="index_pop_box" style="display:block;">
+    	<p>此网站只针对医疗专业人士</p>
+        <input type="button" class="btn" />
+    </div>
+    <div class="hint_pop_box" style="display:none;">
+    	<h4>提示</h4>
+        <input type="button" class="btn close_btn" />
+        <div class="hint_cont">
+            <div class="hint">
+                <p>请输入邀请码：</p>
+            </div>
+            <div class="code_txt">
+            	<input class="text" />
+            </div>
+            <div class="clearfix">
+                <input type="button" class="btn yellow_btn" value="确定" />
+                <input type="button" class="btn yellow_btn mar_0" value="取消" />
+            </div>
+            <div class="notice">
+                <p> <span>注：</span>无邀请码，请<a href="">点击这里</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

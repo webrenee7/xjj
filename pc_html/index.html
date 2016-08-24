@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="res/index.css" />
+</head>
+
+<body>
+<!--<div class="fly_box" id="fly_box_ecnp">
+	<div class="fly_box_body">
+		<p class="p1">西安杨森将国际会议带到中国！ECNP2014，</p>
+        <p class="p2">注册后可无限次免费观看主题演讲（附中英文对照讲稿）和幻灯片，</p>
+    	<p class="invite_card"><b>邀请码：西安杨森ECNP。</b></p>
+    </div>
+</div>
+<div class="fly_box_new" id="fly_box_ecnp">
+	<a href="" class="fly_box_body_new"></a>
+</div>-->
+<div class="fly_box" id="fly_box_ecnp">
+	<div class="fly_one">
+        <a href="" class="fly_box_body"><img src="res/images/fly_box.png" /></a>
+        <input type="button" class="btn close_btn" />
+    </div>
+    <div class="fly_two">
+		<a href=""><img src="res/images/answer.png" /></a>
+	</div>
+</div>
+<script>
+window.onscroll=function ()
+	{
+		var oDiv=document.getElementById('fly_box_ecnp');
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		
+		//oDiv.style.top=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2+'px';
+		var t=scrollTop+(document.documentElement.clientHeight-oDiv.offsetHeight)/2;
+		startMove(parseInt(t));
+	}
+	
+	var timer=null;
+	
+	function startMove(iTarget)
+	{
+		var oDiv=document.getElementById('fly_box_ecnp');
+		
+		clearInterval(timer);
+		timer=setInterval(function (){
+			var iSpeed=(iTarget-oDiv.offsetTop)/8;
+			iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+			
+			if(oDiv.offsetTop==iTarget)
+			{
+				clearInterval(timer);
+			}
+			else
+			{
+				oDiv.style.top=oDiv.offsetTop+iSpeed+'px';
+			}
+			
+	//		txt1.value=oDiv.offsetTop+',目标：'+iTarget;
+		}, 30);
+	}
+</script>
+<div class="header">
+	<div class="header_body">
+    	<div class="login_regist">
+        	<a href="" class="regist">注册</a>
+            <a href="" class="login">登录</a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+	<div class="nav_body">
+    	<div class="left_nav">
+        	<a href="" class="nav1 nav1_c"></a>
+            <a href="" class="nav2">领域热点</a>
+            <a href="" class="nav3">期刊文章</a>
+            <a href="" class="nav4">医学教育</a>
+            <a href="" class="nav5">我的定制</a>
+            <a href="" class="nav6">联系我们</a>
+        </div>
+        <div class="right_search">
+        	<input type="text" class="input1" />
+            <input type="button" class="btn top_search" />
+        </div>
+    </div>
+</div>
+<div class="content">
+	<div class="content_body clearfix">
+    	<div class="content_left">
+        	<div class="left_body">
+                <div class="one_part clearfix">
+                    <div class="part_left">
+                    	<div class="part_title title1"></div>
+                        <div class="part_img">
+                        	<a href="">
+                            	<img src="res/test_images/1.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part_right">
+                    	<div class="part_top">
+                        	<p class="part_h">
+                            	<a href="">现行精神药物命名系统或被颠覆</a>
+                            </p>
+                            <div>世界主要精神病学组织正在提议。颠覆目前的药物命名系统，由基于症状（如抗抑郁药、抗精神病药）转变为基于于症状...<a href="">[详情]</a></div>
+                        </div>
+                        <div class="part_list">
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                                <span class="new"></span>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">AJP综观：糖皮质激素的精神副作用<label class="pad_l8">病例汇总：内分泌疾病误诊</label></a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_part clearfix">
+                    <div class="part_left">
+                    	<div class="part_title title2"></div>
+                        <div class="part_img">
+                        	<a href="">
+                            	<img src="res/test_images/2.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part_right">
+                    	<div class="part_top">
+                        	<p class="part_h">
+                            	<a href="">现行精神药物命名系统或被颠覆</a>
+                            </p>
+                            <div>世界主要精神病学组织正在提议。颠覆目前的药物命名系统，由基于症状（如抗抑郁药、抗精神病药）转变为基于于症状...<a href="">[详情]</a></div>
+                        </div>
+                        <div class="part_list">
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">AJP综观：糖皮质激素的精神副作用<label class="pad_l8">病例汇总：内分泌疾病误诊</label></a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">专家视点：难治性强迫的治疗策略<label class="pad_l8">强迫诊疗概要</label></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_part clearfix education">
+                    <div class="part_left">
+                    	<div class="part_title title3"></div>
+                        <div class="part_img">
+                        	<a href="">
+                            	<img src="res/test_images/3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part_right">
+                    	<div class="part_top">
+                        	<p class="part_h">
+                            	<a href="">Expert Talks</a>
+                            </p>
+                            <div>this section contains recordings of educational seicntirie talks and presentations presentations by leading experts is by leading experts is ......<a href="">[more]</a></div>
+                        </div>
+                        <div class="part_list">
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">this section contains recordings of educational seicntirie</a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">talks and presentations by leading experts is psychiatry and</a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">this section contains recordings of educational seicntirie talks</a>
+                            </div>
+                            <div class="one_li">
+                                <span>•</span>
+                                <a href="" class="left">and presentations by leading experts is psychiatry and</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_part clearfix medical_tools">
+                    <div class="part_left">
+                    	<div class="part_title title4"></div>
+                        <div class="part_img">
+                        	<a href="">
+                            	<img src="res/test_images/4.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part_right">
+                    	<div class="one_tool">
+                        	<div class="tool_img">
+                            	<a href="" class="tool1"></a>
+                            </div>
+                            <p>
+                            	<a href="">文献检索</a>
+                            </p>
+                        </div>
+                        <div class="one_tool">
+                        	<div class="tool_img">
+                            	<a href="" class="tool2"></a>
+                            </div>
+                            <p>
+                            	<a href="">全文获取</a>
+                            </p>
+                        </div>
+                        <div class="one_tool">
+                        	<div class="tool_img">
+                            	<a href="" class="tool3"></a>
+                            </div>
+                            <p>
+                            	<a href="">常用公式</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_right">
+        	<div class="rigth_body">
+            	<div class="click_list">
+                	<p class="r_title">点击排行榜</p>
+                    <div class="ranking_nav">
+                    	<a href="" class="current_list">领域热点</a>
+                        <a href="" class="mar_24">期刊文章</a>
+                        <a href="">医学教育</a>
+                    </div>
+                    <ul>
+                    	<li class="one_click clearfix">
+                        	<span class="top">1</span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span class="top">2</span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span class="top">3</span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                        <li class="one_click clearfix">
+                        	<span></span>
+                            <a>糖尿病患者心血管预防的争议与现状</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="friendly_link">
+                	<p class="r_title">友情链接：</p>
+                    <ul>
+                    	<li class="one_link">
+                        	<a href="">CSP网络精神病学组</a>
+                        </li>
+                        <li class="one_link">
+                        	<a href="">天坛卒中学院</a>
+                        </li>
+                        <li class="one_link">
+                        	<a href="">杨森亚太精分学院</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="footer_body">法律声明：会议内容不可散播或使用</div>
+</div>
+<div class="shadow" style="display:block;"></div>
+<div class="pop_box" style="display:none">
+	<div class="pop_box_body">
+        <p class="pad_t50">此网站只针对医疗专业人士</p>
+        <p class="confirm">
+        	<input type="button" class="btn" value="确定" />
+        </p>
+    </div>
+</div>
+<div class="f_pop_box2 login_pop_box" style="display:block;">
+    <div class="f_pop_tit">提示</div>
+    <div class="f_close_box">
+		<input class="f_close" type="button" />
+	</div>
+    <div class="f_pop_txt">请输入邀请码：</div>
+    <div class="w_card">
+    	<input type="text" />
+    </div>
+    <div class="confirm">
+    	<input class="btn" type="button" value="确定" />
+    </div>
+    <p class="click_here"><b>注</b>：无邀请码，请<a href="">点击这里</a></p>
+</div>
+</body>
+</html>
